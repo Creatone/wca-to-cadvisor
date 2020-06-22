@@ -1,0 +1,96 @@
+{
+    "core": {
+        "events": [
+            [
+                "stalled_mem_loads"
+            ]
+        ],
+        "custom_events": [
+            {
+                "type": 4,
+                "config": [
+                    "0xa3",
+                    "0x6",
+                    "0x6"
+                ],
+                "name": "stalled_mem_loads"
+            }
+        ]
+    },
+    "uncore": {
+        "events": [
+            [
+                "uncore_imc/pmm_bandwidth_reads"
+            ],
+            [
+                "uncore_imc/pmm_bandwidth_writes"
+            ],
+            [
+                "uncore_imc/cas_count_reads"
+            ],
+            [
+                "uncore_imc/cas_count_writes"
+            ],
+            [
+                "uncore_imc/rpq_occupancy"
+            ],
+            [
+                "uncore_imc/rpq_inserts"
+            ],
+            [
+                "uncore_imc/imc_clockticks"
+            ]
+        ],
+        "custom_events": [
+            {
+                "config": [
+                    "0xe3",
+                    "0x0"
+                ],
+                "name": "uncore_imc/pmm_bandwidth_reads"
+            },
+            {
+                "config": [
+                    "0xe7",
+                    "0x0"
+                ],
+                "name": "uncore_imc/pmm_bandwidth_writes"
+            },
+            {
+                "config": [
+                    "0x4",
+                    "0x3"
+                ],
+                "name": "uncore_imc/cas_count_reads"
+            },
+            {
+                "config": [
+                    "0x4",
+                    "0xc"
+                ],
+                "name": "uncore_imc/cas_count_writes"
+            },
+            {
+                "config": [
+                    "0x80",
+                    "0x0"
+                ],
+                "name": "uncore_imc/rpq_occupancy"
+            },
+            {
+                "config": [
+                    "0x10",
+                    "0x0"
+                ],
+                "name": "uncore_imc/rpq_inserts"
+            },
+            {
+                "config": [
+                    "0x0",
+                    "0x0"
+                ],
+                "name": "uncore_imc/imc_clockticks"
+            }
+        ]
+    }
+}

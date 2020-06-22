@@ -1,0 +1,204 @@
+{
+    "core": {
+        "events": [
+            [
+                "stalled_mem_loads"
+            ],
+            [
+                "offcore_requests_l3_miss_demand_data_rd"
+            ],
+            [
+                "offcore_requests_demand_data_rd"
+            ],
+            [
+                "offcore_requests_demand_rfo"
+            ],
+            [
+                "offcore_requests_outstanding_l3_miss_demand_data_rd"
+            ],
+            [
+                "mem_load_retired_local_dram"
+            ],
+            [
+                "mem_load_retired_remote_dram"
+            ],
+            [
+                "mem_inst_retired_loads"
+            ],
+            [
+                "mem_inst_retired_stores"
+            ],
+            [
+                "dtlb_load_misses"
+            ]
+        ],
+        "custom_events": [
+            {
+                "type": 4,
+                "config": [
+                    "0xa3",
+                    "0x14",
+                    "0x14"
+                ],
+                "name": "stalled_mem_loads"
+            },
+            {
+                "type": 4,
+                "config": [
+                    "0xb0",
+                    "0x10",
+                    "0x0"
+                ],
+                "name": "offcore_requests_l3_miss_demand_data_rd"
+            },
+            {
+                "type": 4,
+                "config": [
+                    "0xb0",
+                    "0x1",
+                    "0x0"
+                ],
+                "name": "offcore_requests_demand_data_rd"
+            },
+            {
+                "type": 4,
+                "config": [
+                    "0xb0",
+                    "0x4",
+                    "0x0"
+                ],
+                "name": "offcore_requests_demand_rfo"
+            },
+            {
+                "type": 4,
+                "config": [
+                    "0x60",
+                    "0x10",
+                    "0x0"
+                ],
+                "name": "offcore_requests_outstanding_l3_miss_demand_data_rd"
+            },
+            {
+                "type": 4,
+                "config": [
+                    "0xd3",
+                    "0x1",
+                    "0x0"
+                ],
+                "name": "mem_load_retired_local_dram"
+            },
+            {
+                "type": 4,
+                "config": [
+                    "0xd3",
+                    "0x2",
+                    "0x0"
+                ],
+                "name": "mem_load_retired_remote_dram"
+            },
+            {
+                "type": 4,
+                "config": [
+                    "0xd0",
+                    "0x81",
+                    "0x0"
+                ],
+                "name": "mem_inst_retired_loads"
+            },
+            {
+                "type": 4,
+                "config": [
+                    "0xd0",
+                    "0x82",
+                    "0x0"
+                ],
+                "name": "mem_inst_retired_stores"
+            },
+            {
+                "type": 4,
+                "config": [
+                    "0x8",
+                    "0xe",
+                    "0x0"
+                ],
+                "name": "dtlb_load_misses"
+            }
+        ]
+    },
+    "uncore": {
+        "events": [
+            [
+                "uncore_imc/pmm_bandwidth_reads"
+            ],
+            [
+                "uncore_imc/pmm_bandwidth_writes"
+            ],
+            [
+                "uncore_imc/cas_count_reads"
+            ],
+            [
+                "uncore_imc/cas_count_writes"
+            ],
+            [
+                "uncore_imc/rpq_occupancy"
+            ],
+            [
+                "uncore_imc/rpq_inserts"
+            ],
+            [
+                "uncore_imc/imc_clockticks"
+            ]
+        ],
+        "custom_events": [
+            {
+                "config": [
+                    "0xe3",
+                    "0x0"
+                ],
+                "name": "uncore_imc/pmm_bandwidth_reads"
+            },
+            {
+                "config": [
+                    "0xe7",
+                    "0x0"
+                ],
+                "name": "uncore_imc/pmm_bandwidth_writes"
+            },
+            {
+                "config": [
+                    "0x4",
+                    "0x3"
+                ],
+                "name": "uncore_imc/cas_count_reads"
+            },
+            {
+                "config": [
+                    "0x4",
+                    "0xc"
+                ],
+                "name": "uncore_imc/cas_count_writes"
+            },
+            {
+                "config": [
+                    "0x80",
+                    "0x0"
+                ],
+                "name": "uncore_imc/rpq_occupancy"
+            },
+            {
+                "config": [
+                    "0x10",
+                    "0x0"
+                ],
+                "name": "uncore_imc/rpq_inserts"
+            },
+            {
+                "config": [
+                    "0x0",
+                    "0x0"
+                ],
+                "name": "uncore_imc/imc_clockticks"
+            }
+        ]
+    }
+}
