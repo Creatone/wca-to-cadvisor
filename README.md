@@ -6,5 +6,4 @@ Requirements:
 - pipenv
 
 Usage:
-
-`pipenv run main.py`
+`pipenv install && pipenv run python main.py`
