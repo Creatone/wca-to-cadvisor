@@ -23,5 +23,7 @@ for code_name in CODE_NAMES:
                     PREDEFINED_RAW_EVENTS[event][code_name]),
                 "name": event
             })
-    with open("perf-wca-%s" % code_name.value, "w") as f:
-        f.write(json.dumps(cadvisor_perf_config))
+    with open("perf-wca-%s.json" % code_name.value, "w") as f:
+        f.write(json.dumps(cadvisor_perf_config, indent=4))
+
+print("Done")
