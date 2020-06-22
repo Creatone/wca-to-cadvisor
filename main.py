@@ -15,13 +15,14 @@ CODE_NAMES = [code_name
 for code_name in CODE_NAMES:
     for event in PREDEFINED_RAW_EVENTS:
         if code_name in PREDEFINED_RAW_EVENTS[event]:
-            cadvisor_perf_config["events"].append([event])
+            event_name = event.replace("task_", "")
+            cadvisor_perf_config["events"].append([event_name])
             cadvisor_perf_config["custom_events"].append({
                 "type": 4,
                 "config": list(
                     hex(code) for code in
                     PREDEFINED_RAW_EVENTS[event][code_name]),
-                "name": event
+                "name": event_name
             })
     with open("perf-wca-%s.json" % code_name.value, "w") as f:
         f.write(json.dumps(cadvisor_perf_config, indent=4))
